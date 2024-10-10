@@ -74,6 +74,7 @@ const Game: React.FC<GameProps> = ({ onToGameOver, onBackToMenu }) => {
         <p>Time Left: {timer}</p>
       </div>
       <canvas
+        role="canvas"
         id="game-canvas"
         ref={canvasRef}
         width={canvasSize.width}
