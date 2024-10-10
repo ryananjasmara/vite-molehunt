@@ -21,6 +21,7 @@ module.exports = {
   ],
   collectCoverage: true,
   coverageDirectory: "<rootDir>/coverage",
+  coverageReporters: ["lcov", "text", "text-summary"],
   moduleFileExtensions: ["js", "jsx", "ts", "tsx"],
   roots: ["<rootDir>/src"],
   extensionsToTreatAsEsm: [".ts", ".tsx"],
