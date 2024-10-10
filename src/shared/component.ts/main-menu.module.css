@@ -1,0 +1,48 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .main h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: white;
+  }
+  
+  .button {
+    font-size: 1.2rem;
+    padding: 0.8rem 1.5rem;
+    margin: 0.5rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .button:hover {
+    background-color: #45a049;
+  }
+  
+  @media (max-width: 600px) {
+    .main {
+      padding: 0px;
+    }
+  
+    .main h1 {
+      font-size: 2rem;
+    }
+  
+    .button {
+      font-size: 1rem;
+      padding: 0.6rem 1.2rem;
+    }
+  }

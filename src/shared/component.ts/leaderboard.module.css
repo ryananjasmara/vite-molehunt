@@ -1,0 +1,127 @@
+.leaderboardTable {
+    width: 100%;
+    max-width: 600px;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+    color: white;
+  }
+  
+  .leaderboardTable th,
+  .leaderboardTable td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  .leaderboardTable th {
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .leaderboardTable tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+  
+  .leaderboardTable tr:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .leaderboardRank {
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .leaderboardName {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 200px;
+  }
+  
+  .leaderboardScore {
+    font-weight: bold;
+    text-align: right;
+  }
+  
+  @media (max-width: 600px) {
+    .leaderboardTable {
+      font-size: 0.9rem;
+    }
+  
+    .leaderboardTable th,
+    .leaderboardTable td {
+      padding: 0.5rem;
+    }
+  
+    .leaderboardName {
+      max-width: 150px;
+    }
+  }
+  
+  .leaderboardNoData {
+    text-align: center;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  
+  .leaderboardNoData td {
+    text-align: center !important;
+    padding: 20px 0;
+  }
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  text-align: center;
+  max-height: 100vh;
+  overflow-y: auto;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.main button {
+  font-size: 1.2rem;
+  padding: 0.8rem 1.5rem;
+  margin: 0.5rem;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.main button:hover {
+  background-color: #45a049;
+}
+
+.main h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.main p {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .main {
+    padding: 0px;
+  }
+
+  .main p {
+    font-size: 1.2rem;
+  }
+
+  .main button {
+    font-size: 1rem;
+    padding: 0.6rem 1.2rem;
+  }
+}
