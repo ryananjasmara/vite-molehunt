@@ -16,9 +16,14 @@ describe("GameEngine", () => {
 
   beforeEach(() => {
     const mockCanvas = document.createElement("canvas");
-    const mockContext = mockCanvas.getContext("2d");
+    const mockContext = {
+      clearRect: jest.fn(),
+      beginPath: jest.fn(),
+      arc: jest.fn(),
+      fill: jest.fn(),
+    };
     jest.spyOn(document, "getElementById").mockReturnValue(mockCanvas);
-    jest.spyOn(mockCanvas, "getContext").mockReturnValue(mockContext);
+    jest.spyOn(mockCanvas, "getContext").mockReturnValue(mockContext as unknown as CanvasRenderingContext2D);
 
     global.Audio = jest.fn().mockImplementation(() => ({
       play: jest.fn().mockResolvedValue(undefined),
